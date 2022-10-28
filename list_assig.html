@@ -13,6 +13,10 @@
             padding: 0px 40px;
         }
 
+        a:hover + div {
+            background-color: aqua;
+        }
+
         @media screen and (min-width="500px") {
             body{
                 padding: 0px 20px;
@@ -21,106 +25,125 @@
     </style>
 </head>
 <body>
-    <div>
+    <!-- list one -->
+    <div style="background-color: rgb(162, 25, 25); padding: 20px; border-radius: 20px; margin: 20px 10px; color: #fff;">
+        <hr>
         <h4>My favorite habit:</h4>
         <ul>
             <li>Reading Books</li>
             <li>Watching Movies</li>
-            <li>Programming Language</li>
-            <br>
-            <ul >
-                <li>Orange</li>
-                <li>Green</li>
-                <li>White</li>
-            </ul>
+            <li>Programming Language
+                <br>
+                <ul >
+                    <li>Orange</li>
+                    <li>Green</li>
+                    <li>White</li>
+                </ul>
+            </li>
         </ul>
         <hr>
     </div>
-    <div>
+    <!-- list two -->
+    <div style="background-color: rgb(24, 77, 177); padding: 20px; border-radius: 20px; margin: 20px 10px; color: #fff;">
         <h4>Four things to expect in life:</h4>
         <ul>
-            <li>Love</li>
-            <ol type="I">
-                <li>Happiness</li>
-                <li>Emotions</li>
-            </ol>
-            <li>Hate</li>
-            <ol type="I">
-                <li>Fear</li>
-                <li>Fear</li>
-            </ol>
-            <li>Work</li>
-            <ol type="I">
-                <li>Jobs</li>
-                <li>Careers</li>
-            </ol>
-            <li>Play</li>
-            <ol type="I">
-                <li>Retirement</li>
-                <li>Recreation</li>
-            </ol>
+            <li>Love
+                <ol type="I">
+                    <li>Happiness</li>
+                    <li>Emotions</li>
+                </ol>
+            </li>
+            <li>Hate
+                <ol type="I">
+                    <li>Fear</li>
+                    <li>Fear</li>
+                </ol>
+            </li>
+            <li>Work
+                <ol type="I">
+                    <li>Jobs</li>
+                    <li>Careers</li>
+                </ol>
+            </li>
+            <li>Play
+                <ol type="I">
+                    <li>Retirement</li>
+                    <li>Recreation</li>
+                </ol>
+            </li>
         </ul>
         <hr>
     </div>
-    <div>
+    <!-- list one -->
+    <div style="background-color: rgb(23, 176, 36); padding: 20px; border-radius: 20px; margin: 20px 10px; color: #fff;">
         <h4>List of Items</h4>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
-            <li>Item 4</li>
-            <ul >
-                <li>Sub-item 1</li>
-                <li>Sub-item 2</li>
-                <li>Sub-item 3</li>
-                <ul>
-                    <li>Sub-sub-item 1</li>
-                    <li>Sub-sub-item 2</li>
-                    <li>Sub-sub-item 3</li>
-                    <ul style="list-style-type: disc;">
-                        <li>Sub-sub-sub-item 1</li>
-                        <li>Sub-sub-sub-item 2</li>
-                        <li>Sub-sub-sub-item 3</li>
-                        <li>Sub-sub-sub-item 4</li>
-                    </ul>
-                    <li>Sub-sub-item 4</li>
+            <li>Item 4
+                <ul >
+                    <li>Sub-item 1</li>
+                    <li>Sub-item 2</li>
+                    <li>Sub-item 3
+                        <ul>
+                            <li>Sub-sub-item 1</li>
+                            <li>Sub-sub-item 2</li>
+                            <li>Sub-sub-item 3
+                                <ul style="list-style-type: disc;">
+                                    <li>Sub-sub-sub-item 1</li>
+                                    <li>Sub-sub-sub-item 2</li>
+                                    <li>Sub-sub-sub-item 3</li>
+                                    <li>Sub-sub-sub-item 4</li>
+                                </ul>
+                            </li>
+                            <li>Sub-sub-item 4</li>
+                        </ul>
+                    </li>
+                    <li>Sub-item 4</li>
                 </ul>
-                <li>Sub-item 4</li>
-            </ul>
+            </li>
             <li>Item 5</li>
             <li>Item 6</li>
         </ul>
         <hr>
     </div>
-    <div>
+    <!-- list four -->
+    <div style="background-color: rgb(174, 20, 149); padding: 20px; border-radius: 20px; margin: 20px 10px; color: #fff;">
         <h3>Aircraft Types</h3>
         <ul>
-            <li>General Aviation (Piston-driven engines)</li>
-            <ol type="1">
-                <li>Single-Engine Aircraft</li>
-                <ol type="A">
-                    <li>Tail wheel</li>
-                    <li>Tricycle</li>
+            <li>General Aviation (Piston-driven engines)
+                <ol type="1">
+                    <li>Single-Engine Aircraft
+                        <ol type="A">
+                            <li>Tail wheel</li>
+                            <li>Tricycle</li>
+                        </ol>
+                    </li>
+                    <li>Dual-Engine Aircraft
+                        <ol type="I">
+                            <li>Wing-mounted engines</li>
+                            <li>Push-pull fuselage-mounted engines</li>
+                        </ol>
+                    </li>
                 </ol>
-                <li>Dual-Engine Aircraft</li>
-                <ol type="I">
-                    <li>Wing-mounted engines</li>
-                    <li>Push-pull fuselage-mounted engines</li>
+            </li>
+            <li>Commercial Aviation (jet engines)
+                <ol type="1">
+                    <li>Dual-Engine
+                        <ol type="a">
+                            <li>Wing-mounted engines</li>
+                            <li>Fuselage-mounted engines</li>
+                        </ol>
+                    </li>
+                    <li>Tri-Engine
+                        <ol type="i">
+                            <li>Third engine in vertical stabilizer</li>
+                            <li>Third engine in fuselage</li>
+                        </ol>
+                    </li>
                 </ol>
-            </ol>
-            <li>Commercial Aviation (jet engines)</li>
-            <ol type="1">
-                <li>Dual-Engine</li>
-                <ol type="a">
-                    <li>Wing-mounted engines</li>
-                    <li>Fuselage-mounted engines</li>
-                </ol>
-                <li>Tri-Engine</li>
-                <ol type="i">
-                    <li>Third engine in vertical stabilizer</li>
-                    <li>Third engine in fuselage</li>
-                </ol>
-            </ol>
+            </li>
         </ul>
         <br>
         <br>
