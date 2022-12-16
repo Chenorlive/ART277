@@ -1,0 +1,314 @@
+:root {
+    --yellow-color: rgb(210, 165, 3);
+    --green-color: rgba(22, 62, 31);
+    --second-green: rgb(98, 174, 116);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contianer {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.button {
+    padding: 10px;
+    color: var(--yellow-color);
+    background-color: var(--green-color);
+    border-radius: 5%;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(16, 96, 35);
+}
+
+.hero .hero-text {
+    width: 70%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.hero .hero-text h2 {
+    font-size: 40px;
+    color: var(--yellow-color);
+}
+
+.hero .hero-text p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.h1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assert/vaccine.jpeg");
+    width: 100%;
+}
+
+
+/* menus item style */
+
+.menus {
+    width: 100%;
+    background-color: rgba(22, 62, 31);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+}
+
+.menus h2 {
+    margin: 0 10%;
+}
+
+.menus h2 span {
+    color: var(--yellow-color)
+
+}
+
+.menus ul {
+    display: flex;
+    margin: 0 10%;
+}
+
+.menus ul li {
+    padding: 10px;
+    margin: 3px;
+    list-style: none;
+    font-size: medium;
+}
+
+.menus ul li a {
+    color: #fff
+}
+
+.menus-list {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* home page card style */ 
+
+
+.main iframe {
+    float: right;
+    padding-top: 9px;
+    padding-left: 15px;
+    width: 40%;
+    height: 260px;
+}
+
+
+.main p {
+    font-size: 20px;
+}
+
+.main span, h4, a {
+    color: var(--yellow-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main span, h4 {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+
+/* Tips page style */
+
+.tips h1 {
+    color: var(--yellow-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+.tips h1 span {
+    color: var(--green-color);
+}
+
+.tips p {
+    font-size: 24px;
+}
+
+.tips video {
+    float: left;
+    padding-right: 15px;
+    padding-top: 9px;
+    width: 40%;
+    height: 260px;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+table {
+    background-color: var(--second-green);
+    border: 1px;
+    margin: auto;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+
+/* contact page style */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+
+
+/** form style */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-green);
+    width: 100%;
+    padding: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: medium; 
+}
+
+input, textarea {
+    border:  none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 4px 0;
+}
+
+input, textarea {
+    border:  none;
+}
+
+.btn {
+    background-color: rgb(41, 110, 42);
+    color: #fff;
+    font-size: medium;
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.map {
+    width: 100%;
+}
+
+
+
+/** footer style **/
+
+.footer {
+    width: 100%;
+    display: flex;
+    background-color: rgba(22, 62, 31);
+    color: #fff;
+    padding: 20px 0;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+/* Table and Mobile style*/ 
+
+@media (max-width: 750px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .menus {
+        flex-direction: column;
+    }
+
+    .hero .hero-text {
+        left: 20%;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+}
+
+
+
